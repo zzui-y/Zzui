@@ -10,7 +10,7 @@ def delete_empty_folders():
     d = ".."
     count = 0
     p()
-        
+    print("\n")
     for item in os.listdir(d): #scanning the desktop
         if item in (".",".."):
             continue #skipping parent dir and current dir
@@ -20,7 +20,7 @@ def delete_empty_folders():
         if os.path.isdir(target_path): #to target only directories
             try:
                 os.rmdir(target_path)
-                print(Fore.GREEN + f"\n [x] Deleted detected folder: {item}")
+                print(Style.BRIGHT + Fore.RED + f" [x] Deleted detected folder: {item}")
                 count += 1
             except OSError:
                 pass
