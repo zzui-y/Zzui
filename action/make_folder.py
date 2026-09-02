@@ -12,7 +12,7 @@ def make_folder():
     p()
     print("\n")
     if not raw:
-        print(Style.BRIGHT + Fore.YELLOW + "No folder(s) name given...")
+        print(Style.BRIGHT + Fore.YELLOW + "No folder name(s) given...")
         time.sleep(0.3)
         print(Style.BRIGHT + Fore.YELLOW + "Exiting action.")
         return
