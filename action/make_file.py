@@ -17,5 +17,5 @@ def make_file():
         print(Style.BRIGHT + Fore.GREEN + "File created.")
     except FileExistsError:
         print(Style.BRIGHT + Fore.RED + f"Error: '{name}' already exists")
-    except:
+    except Exception as e:
         print(Style.BRIGHT + Fore.RED + f"Error : {e}")

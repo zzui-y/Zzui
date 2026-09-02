@@ -11,5 +11,5 @@ def show_dir():
         print("\n")
         for item in os.listdir('..'): time.sleep(0.02); print(f"- {item}")
         print(Style.BRIGHT + Fore.GREEN + "\nDir retrieved.")
-    except:
+    except Exception as e:
         print(Style.BRIGHT + Fore.RED + f"Error : {e}")

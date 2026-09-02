@@ -14,6 +14,6 @@ def make_folder():
         os.makedirs(d, exist_ok=True)
         p()
         print(Style.BRIGHT + Fore.GREEN + "Folder created.")
-    except:
+    except Exception as e:
         print(Style.BRIGHT + Fore.RED + f"Error : {e}")
     
